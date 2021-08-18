@@ -1,0 +1,134 @@
+{
+  "id": "58bba57d-a987-49a9-a213-114577ba16a0",
+  "version": "2.0",
+  "name": "Lesson01_3",
+  "url": "https://ibays.ru/",
+  "tests": [{
+    "id": "19796958-4f91-4286-90fc-e948e66ae284",
+    "name": "Untitled",
+    "commands": [{
+      "id": "10236142-82ce-4f53-802f-30e206d5362f",
+      "comment": "",
+      "command": "open",
+      "target": "https://ibays.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73091aae-7b58-4d0d-82bd-867285c0da30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51d1b507-09e8-4963-80a6-0eb51e0cf043",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Мой Аккаунт",
+      "targets": [
+        ["linkText=Мой Аккаунт", "linkText"],
+        ["css=.d-none > .my-account-btn", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://ibays.ru/my-account/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "571e102c-09f3-44c9-87e6-249e65dfbb4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-padding",
+      "targets": [
+        ["css=.section-padding", "css:finder"],
+        ["xpath=//section[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65e2e72f-9ba2-47b4-9c08-a2a53228ad89",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9af978e1-ffd4-407e-8551-3e4d0d706580",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "geekgeek5"
+    }, {
+      "id": "b6fff032-9861-42ce-8e4d-91de4903319a",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "591586f7-2c91-4994-8fb1-32d25fa146fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Geekgeekgeek5"
+    }, {
+      "id": "d8941f3e-c8cc-406a-a1e8-a23bc611c073",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e81f11bb-bdcd-4f2e-ad81-e328d5d99ea1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a/span[@itemprop='name']",
+      "targets": [],
+      "value": "Home"
+    }]
+  }],
+  "suites": [{
+    "id": "009b66ed-ee10-4298-b7ec-f1182b898665",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["19796958-4f91-4286-90fc-e948e66ae284"]
+  }],
+  "urls": ["https://ibays.ru/"],
+  "plugins": []
+}

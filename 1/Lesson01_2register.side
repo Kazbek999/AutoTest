@@ -1,0 +1,136 @@
+{
+  "id": "df5237e3-34b0-48d4-9b49-ccd1d612baca",
+  "version": "2.0",
+  "name": "Lesson01_2",
+  "url": "https://ibays.ru/",
+  "tests": [{
+    "id": "ae8062f3-dce6-48f5-9855-bee25bb40dd7",
+    "name": "Untitled",
+    "commands": [{
+      "id": "23bb3c3f-c0b1-4656-9e78-eb2b14891b83",
+      "comment": "",
+      "command": "open",
+      "target": "https://ibays.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb7aa101-dc86-4f46-a157-f694d8073e4f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='header-btn d-none d-xl-block']/a[@class='my-account-btn']",
+      "targets": [
+        ["id=reg_username", "id"],
+        ["css=#reg_username", "css:finder"],
+        ["xpath=//input[@id='reg_username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c08efd4a-c15a-4d71-ab93-9b27861eb99e",
+      "comment": "",
+      "command": "type",
+      "target": "id=reg_username",
+      "targets": [
+        ["id=reg_username", "id"],
+        ["css=#reg_username", "css:finder"],
+        ["xpath=//input[@id='reg_username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/p/input", "xpath:position"]
+      ],
+      "value": "geekgeek5"
+    }, {
+      "id": "8e467c2c-fd09-4399-9da3-67c3566a5c85",
+      "comment": "",
+      "command": "click",
+      "target": "id=reg_email",
+      "targets": [
+        ["id=reg_email", "id"],
+        ["name=email", "name"],
+        ["css=#reg_email", "css:finder"],
+        ["xpath=//input[@id='reg_email']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d5d9bce-6896-4085-a835-116cda0d3e21",
+      "comment": "",
+      "command": "type",
+      "target": "id=reg_email",
+      "targets": [
+        ["id=reg_email", "id"],
+        ["name=email", "name"],
+        ["css=#reg_email", "css:finder"],
+        ["xpath=//input[@id='reg_email']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "geek5@mail.ru"
+    }, {
+      "id": "7e7a8786-39c9-481f-874c-1221d0348063",
+      "comment": "",
+      "command": "click",
+      "target": "id=reg_password",
+      "targets": [
+        ["id=reg_password", "id"],
+        ["css=#reg_password", "css:finder"],
+        ["xpath=//input[@id='reg_password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[3]/span/input", "xpath:idRelative"],
+        ["xpath=//p[3]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94c951c2-cd0c-48d9-9458-6fbda57ed845",
+      "comment": "",
+      "command": "type",
+      "target": "id=reg_password",
+      "targets": [
+        ["id=reg_password", "id"],
+        ["css=#reg_password", "css:finder"],
+        ["xpath=//input[@id='reg_password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[3]/span/input", "xpath:idRelative"],
+        ["xpath=//p[3]/span/input", "xpath:position"]
+      ],
+      "value": "Geekgeekgeek5"
+    }, {
+      "id": "4a1f9581-7791-411d-8930-fc604ccd12ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=register",
+      "targets": [
+        ["name=register", "name"],
+        ["css=.woocommerce-Button", "css:finder"],
+        ["xpath=//button[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[5]/button", "xpath:idRelative"],
+        ["xpath=//p[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d02b0411-1879-419c-86e7-392ea02b89a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a/span[@itemprop='name']",
+      "targets": [],
+      "value": "Home"
+    }, {
+      "id": "42e39b2d-9290-46bc-abeb-847eb3077804",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6ed7c612-f087-42cd-b717-3f73d9b7cc22",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ae8062f3-dce6-48f5-9855-bee25bb40dd7"]
+  }],
+  "urls": ["https://ibays.ru/"],
+  "plugins": []
+}
